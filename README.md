@@ -5,7 +5,8 @@
 ```
 The basic HTML and CSS code was taken from the provided Github repository Udacity has provided. 
 
-I have added some changes to the CSS to make it more personalized and have indicated all changes in the files. 
+I have added some changes to the CSS to make it more personalized and have indicated all changes 
+in the files. 
 
 ```
 
@@ -14,8 +15,8 @@ I have added some changes to the CSS to make it more personalized and have indic
 This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
 
 ```
-Starting up Web App: have node.js downloaded. Then open a Terminal window in the directory and input 'node.js server.js'
-
+Starting up Web App: have node.js downloaded. Then open a Terminal window in the directory and 
+input 'node.js server.js'
 ```
 
 ------
