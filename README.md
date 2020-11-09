@@ -27,10 +27,10 @@ input 'node.js server.js'
 * has to set up an instance of the app using `express()`, `cors()`, and `body-parser`
 * has a GET and POST request on the server side for the requested entry on the inputed data
 2. Create credentials on OpenWeatherMap API:
-* get a personal APIkey 
+* get a personal `APIkey` 
 * use the search by Zip Code instance of the API
 * extract the returned data and compile it into the Object to be sent to the server side from the client side
-3. have a POST and GET method functions on the client side and post the pulled data to the HTML page
+3. have a `POST` and `GET` method functions on the client side and post the pulled data to the HTML page
 
 ------
 
@@ -55,7 +55,7 @@ input 'node.js server.js'
 * Set up `express.js` and an 'app' instance using `express`
 * Set up `body-parser` and `cors` to aid in reading the application instance
 * Initiated the `PORT` variable
-* Set up the POST and GET functions for the server side
+* Set up the `POST` and `GET` functions for the server side
 * Called the `listen()` function to run the app when the server is called by 'node server.js'
 
 ### My app.js File Set Up: 
@@ -63,7 +63,7 @@ input 'node.js server.js'
 * Global Variables 
 * the Generate button Function
 * API call function that takes in the [base, zip and api key]
-* Client side POST call that sends the compiled data to the server side POST function
-* Client side GET call that retrieves the saved data fromt the server side GET function
+* Client side `POST` call that sends the compiled data to the server side `POST` function
+* Client side `GET` call that retrieves the saved data fromt the server side `GET` function
 * HTML build function that takes the retrieved data from the GET call and inputs it to the HTML document 
 
