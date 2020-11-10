@@ -15,8 +15,8 @@ const iconImg = document.getElementById('icon');
 let postAllData = {};
 
 //API call information
-let baseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
-let apiKey = "&appid=" + "e6dfde560301700e38bf99c2807bb36f";
+const baseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
+const apiKey = "&appid=" + "e6dfde560301700e38bf99c2807bb36f";
 
 
 // Create a new date instance dynamically with JS
@@ -26,8 +26,11 @@ let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 //Generate Button calls the main function to get info and post it
 genBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    getWeather(baseURL, zip.value, apiKey);
-    getPostData('http://localhost:5507/addWJEntry');
+    if(zip.value !== '') {
+        getWeather(baseURL, zip.value, apiKey);        
+    } else {
+        alert('This is not a valid zip code. Please enter a valid US zipcode');
+    }
 });
 
 //Takes the API info and fetches the weather data and posting it to the server
@@ -56,8 +59,7 @@ const getWeather = async (base, zipCode, key) => {
         };
 
         postWeatherData('http://localhost:5507/addWJEntry',postAllData);
-        
-        return postAllData;
+        getPostData('http://localhost:5507/addWJEntry');
         
     } catch(error) {
         console.log("error", error);
